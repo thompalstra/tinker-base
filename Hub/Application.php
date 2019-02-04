@@ -25,9 +25,12 @@ class Application extends Base
     public function __construct()
     {
         require_once("Frame.php");
+        
+        include ('autoload.php');
+
         Frame::$app = &$this;
 
-        $this->root = dirname(__DIR__);
+        $this->root = dirname(dirname(dirname(dirname(__DIR__))));
 
         $config = Frame::path([$this->root, 'config.php']);
         if(file_exists($config)){

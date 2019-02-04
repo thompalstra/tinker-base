@@ -4,7 +4,9 @@
     "require": {
         "php": "^7.2"
     },
-    "psr-4": {
-        "Hub\\": "Hub/"
+    "autoload": {
+        "psr-4": {
+            "Hub\\": "Hub/"
+        }
     }
 }

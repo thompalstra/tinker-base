@@ -25,7 +25,11 @@ class Application extends Base
     public function __construct()
     {
         require_once("Frame.php");
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> ece8ef0fa3658dbcf719cee1445f4572aee7cb15
         include ('autoload.php');
 
         Frame::$app = &$this;
